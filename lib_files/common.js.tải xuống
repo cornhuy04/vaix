@@ -1,0 +1,53 @@
+﻿function ClientLogin(SiteId)   
+{  
+	var username = $('#txtLoginName').val();
+	var password = $('#txtPassword').val();
+	$.ajax({ 
+			type: "POST", 
+			url: "FEAjaxProcess.aspx/ServerUserLoginV2", 
+			data: '{ SiteId:"'+SiteId+'", username:"'+username+'", password:"'+password+'"}', 
+			contentType: "application/json; charset=utf-8", 
+			dataType: "json", 
+			success: ClientLoginOnSuccess, 
+			error: function (xhr, ajaxOptions, thrownError) { 
+				AJAX_EXECUTE_ERROR(xhr.status); 
+			  } 
+		}); 
+}
+function ClientLoginOnSuccess(response) { 
+	OAjaxOut = response.d; 
+	if (OAjaxOut.Error) { 
+		 $('#divLoginProcessInfo').html(OAjaxOut.ErrorMessage);  
+	} 
+	else 
+	{
+		$('#ulUserBar').html(OAjaxOut.InnerHTML);  
+		$('#btnCloseModal').trigger('click');
+	}
+}
+function ClientUserLogout(SiteId)   
+{  
+	username = $('#txtLoginName').val();//'3981137';// 
+	password = $('#txtPassword').val();//'12345678';//
+	$.ajax({ 
+			type: "POST", 
+			url: "FEAjaxProcess.aspx/ServerMemberLogout", 
+			data: '{ }', 
+			contentType: "application/json; charset=utf-8", 
+			dataType: "json", 
+			success: ClientUserLogoutOnSuccess, 
+			error: function (xhr, ajaxOptions, thrownError) { 
+				AJAX_EXECUTE_ERROR(xhr.status); 
+			  } 
+		}); 
+}
+function ClientUserLogoutOnSuccess(response) { 
+	OAjaxOut = response.d; 
+	if (OAjaxOut.Error) { 
+		 alert(OAjaxOut.ErrorMessage);  
+	} 
+	else 
+	{
+		window.open('wpid-home.html', '_self');//	$('#ulUserBar').html('');
+	}
+}

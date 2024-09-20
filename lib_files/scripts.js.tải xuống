@@ -1,0 +1,208 @@
+$(document).ready(function() {
+	// News books
+	/*$("#newBooks").owlCarousel({
+		items : 5,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});*/
+	
+	// Tin chuyen de
+	$("#tinchuyende").owlCarousel({
+		autoPlay: true, //Set AutoPlay to 5 seconds
+		pagination : false,
+		navigation : false, // Show next and prev buttons
+		paginationSpeed:3000, //cho chay cham lai
+		singleItem:true,
+		stopOnHover : true,
+		rewindSpeed: 0,	
+	});
+	
+	// News books Auto Run
+	$("#newBooksRun").owlCarousel({
+		items : 3,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+		rewindSpeed: 0,	
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});
+	
+	// News books
+	$("#newBooks").owlCarousel({
+		items : 2,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+		rewindSpeed: 0,	
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});
+	// MagazineNew
+	$("#MagazineNew").owlCarousel({
+		items : 2,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+		rewindSpeed: 0,	
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});
+	
+	// newsHistoricalFigures
+	$("#newsHistoricalFigures").owlCarousel({
+		items : 4,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+		rewindSpeed: 0,	
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});
+	
+	$("#BookNew").owlCarousel({
+		items : 2,
+		itemsDesktop : [500],
+		itemsDesktopSmall : [500,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+		rewindSpeed: 0,	
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+		
+	});
+	
+	// newsArmy
+	$("#newsArmy").owlCarousel({
+		items : 3,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+		rewindSpeed: 0,	
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});
+	
+	$("#imgHoliday").owlCarousel({
+		items : 1,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		autoPlay: 50000, //Set AutoPlay to 5 seconds
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+    	rewindSpeed: 0,	
+		slideSpeed : 200,
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});
+	
+	$("#imgActive").owlCarousel({
+		items : 1,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+    	rewindSpeed: 0,	
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});
+	
+	
+	$("#newsArmy1").owlCarousel({
+		items : 3,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+		rewindSpeed: 0,	
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});
+	
+	$("#newsArmy2").owlCarousel({
+		items : 3,
+		itemsDesktop : [1199,3],
+		itemsDesktopSmall : [979,3],
+		lazyLoad : true,
+		pagination : false,
+		navigation : true,
+		autoPlay : true,
+		stopOnHover : true,
+		rewindSpeed: 0,	
+		navigationText: ["<span class='glyphicon glyphicon-chevron-left'></span>","<span class='glyphicon glyphicon-chevron-right'></span>"]
+	});
+	
+	if($("#divGio").length > 0){
+	var myVar = setInterval(function(){ myTimer() }, 1000);
+	function myTimer() {
+    var d = new Date();
+    var t = d.toLocaleTimeString();
+    document.getElementById("divGio").innerHTML = t;
+	}
+}
+
+	
+});
+
+
+//JS for equal height
+/*
+function equalHeight(group) {
+	tallest = 0;
+	group.each(function() {
+		thisHeight = $(this).height();
+		if(thisHeight > tallest) {
+			tallest = thisHeight;
+		}
+	});
+	group.height(tallest);
+}
+$(document).ready(function() {
+	equalHeight($(".column"));
+});
+*/
+
+
+
+$(document).ready(function() {
+	$(".lookUpResultTable .panel-heading a").click(function() {
+		
+		$(".lookUpResultTable").find(".panel-collapse").addClass( "tableCaption" );
+		});
+});
+$(document).ready(function() {
+	$(".panel.panel-danger.lookupTerms").removeClass("panel-danger").addClass("panel-info");
+	$(".btn.btn-danger").removeClass("btn-danger").addClass("btn-primary");
+});
+$(function() {
+    $('.column').matchHeight();
+});

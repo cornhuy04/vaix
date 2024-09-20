@@ -1,0 +1,119 @@
+/* ========== GENERAL ========== #d10a1d*/
+a {
+color: #333;
+}
+
+/* --top menu on mobile-- */
+@media (min-width: 768px) {
+.navbar-form .form-group{
+	display: inline-flex;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.navbar-form .form-control 
+{
+    display: inline-block;
+    width: 100%;
+	vertical-align: middle;
+}
+}
+@media (max-width: 767px) {
+.topMenu .navbar-header {
+background: #f4eab5;
+}
+
+.navbar-form .form-group{
+	display: inline-flex;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.moreFocusNews .thumbnail > a > img{
+	float: left;
+    margin-right: 10px;
+    width: 100% !important;
+    height: auto !important;
+}
+.mediaNewsActive {
+    height: 91px;
+    overflow: hidden;
+}
+.navbar-form .form-group {
+    display: inline-flex;
+    margin-bottom: 0;
+    vertical-align: middle;
+}
+.topMenu.navbar-default .navbar-toggle:hover, .topMenu.navbar-default .navbar-toggle:focus {
+background-color: #0089d0;
+}
+.topMenu.navbar-default .navbar-toggle .icon-bar {
+background-color: #fff;
+}
+.topMenu .navbar-brand{
+	padding: 0px 10px;
+}
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a{
+	color: #777;
+}
+.navbar-default .navbar-nav .open .dropdown-menu>li>a:focus, .navbar-default .navbar-nav .open .dropdown-menu>li>a:hover {
+	color: #333;
+    background-color: #E8E8E8;
+}
+/* //--end top menu on mobile-- */
+
+/* --block1-- */
+.block1 h3 {
+	background: #f42f24;
+	color: #fff;
+}
+.block1 h3 a {
+	color: #fff;
+}
+.block1 h3.block1HeaderB {
+	background: #0066b3;
+}
+
+/* --block2-- */
+.block2 h3 p, .block3 h3 p {
+	color: #0066b3;	
+}
+
+/* ========== /GENERAL ========== */
+
+
+
+
+/* ========== HOME PAGE ========== */
+
+/* --home news category-- */
+.homeNewsCategory h3 a.newsCategoryHeader{
+	background: #0066b3;
+	color: #fff;
+}
+/* Category header */
+.homeNewsCategory h3 a{
+/* 	color: #0073bc; */
+}
+/* related News */
+ul.relatedNews li a{
+	color: #666;	
+}
+/* --Category list-- */
+.homeNewsCategoryMore ul li {
+	background: url(themeimg/bullet.png) 0 0.8em no-repeat;
+}
+
+/* --home news category-- */
+.homeNews ul li {
+	  background: url(themeimg/bullet.png) 0 0.7em no-repeat;
+}
+/* ========== /HOME PAGE ========== */
+
+
+/* ========== DETAILS PAGE ========== */
+/* --listGroup-- */
+.listGroup ul li {
+    padding-left: 10px;
+    background: url(themeimg/bullet.png) no-repeat scroll 0px 5px transparent;
+}
+/* ========== //DETAILS PAGE ========== */

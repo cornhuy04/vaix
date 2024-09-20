@@ -1,0 +1,297 @@
+/* ==================== MAN HINH DI DONG ==================== */
+@media (max-width: 767px) {
+
+/* +++++ GENERAL +++++ */
+body{
+	font-size: 15px;
+}
+
+/* --top menu-- */
+.topMenu .navbar-brand>img {
+	width: 32px;
+}
+.topMenu .navbar-brand {
+	padding: 9.5px 10px;
+}
+.topMenu .navbar-form {
+	padding: 10px 20px;
+}
+
+
+/* ++++++++++ /GENERAL ++++++++++ */
+
+
+/* ++++++++++ HOME PAGE ++++++++++ */
+.topZone {
+margin-bottom: 1em;
+}
+.marginBottom {
+	margin-bottom: 5px;
+}
+
+/* --focusNews-- */
+.focusNews {
+border-bottom: 1px dotted #b7b7b7;
+margin-bottom: 6px;
+}
+.focusNews h4 a {
+font-weight: 400;
+}
+
+/* --lastestNews-- */
+.lastestNews li a {
+font-size: 13px;
+font-weight:700;
+}
+.lastestNews li:last-child a {
+border-bottom: none;
+}
+
+/* --moreFocusNews-- */
+.moreFocusNews {
+	margin-bottom: 20px;
+}
+.moreFocusNews .thumbnail {
+	padding-bottom: 5px;
+}
+.moreFocusNews div div:last-child .thumbnail {
+	border: none;
+}
+.moreFocusNews .thumbnail > a > img {
+	float: left;
+	margin-right: 10px;
+	width: 40% !important;
+	height: auto !important;
+}
+.moreFocusNews .thumbnail .caption > h4 {
+	margin: 0;
+}
+.moreFocusNews .thumbnail .caption > h4 > a {
+	font-size: 0.9em;
+	font-weight: 700;
+}
+.moreFocusNews .owl-theme .owl-controls .owl-buttons .owl-prev, .moreFocusNews .owl-theme .owl-controls .owl-buttons .owl-next{
+  top: 50%;
+  margin-top: -15px;
+}
+
+/* --home news category-- */
+/* Category header */
+.homeNewsCategory h3 a {
+	font-size: 18px;
+}
+/* homeNewsCategoryFocus */
+.homeNewsCategoryFocus {
+	margin-bottom: 1em;
+}
+/* Category list */
+.homeNewsCategoryMore ul li {
+	background: url(theme1/themeimg/bullet.png) 0 0.8em no-repeat;
+	  padding: 0.231em 0;
+  padding-left: 10px;
+}
+.homeNewsCategoryMore ul li a {
+font-size: 14px;
+  font-weight: 700;
+  
+
+}
+
+/* ++++++++++ /HOME PAGE ++++++++++ */
+}
+/* ==================== ///MAN HINH DI DONG ==================== */
+
+
+
+/* ==================== TABLETS 768PX TRO LEN ==================== */
+@media (min-width: 768px) {
+/* ++++++++++ GENERAL ++++++++++ */
+/* --top menu-- */
+.topMenu.navbar {
+min-height: 34px;
+}
+.topMenu .navbar-nav>li>a {
+	padding-top: 8.5px;
+	padding-bottom: 8.5px;
+}
+.topMenu .navbar-brand>img {
+	width: 45px;
+}
+.topMenu .navbar-form {
+	  margin: 1px 0;
+}
+.header1 {}
+
+
+/* ++++++++++ /GENERAL ++++++++++ */
+
+
+/* ++++++++++ HOME PAGE ++++++++++ */
+/* --lastest news-- */
+#lastestNewsOut {
+height: 400px;
+overflow: hidden;
+background-color:#f7f7f7;
+}
+#lastestNewsOut  .mCSB_inside > .mCSB_container {
+	margin-right: 0;
+}
+#lastestNewsOut .mCSB_scrollTools {
+	width: 4px;
+}
+
+/* --moreFocusNews-- */
+.moreFocusNews .thumbnail .caption h4 {
+	font-size: 12px;
+	font-weight: 400;
+}
+.moreFocusNews .owl-theme .owl-controls .owl-buttons .owl-prev{
+  top: 100px;
+}
+.moreFocusNews .owl-theme .owl-controls .owl-buttons .owl-next{
+  top: 100px;
+}
+.moreFocusNews img {
+  height: 137px !important;
+}
+.homeNewsCategoryFocus {
+	margin-bottom: 10px;
+}
+
+
+/* --home news category-- */
+/* Category header */
+.homeNewsCategoryMore ul li {
+	padding-left: 10px; 
+}
+/* ++++++++++ /HOME PAGE ++++++++++ */
+
+
+
+/* ++++++++++ DETAILS PAGE ++++++++++ */
+.readMore{
+	border-bottom: 1px dotted #999;
+	padding-bottom: 10px;
+}
+/* ++++++++++ DETAILS PAGE ++++++++++ */
+
+
+
+/* ++++++++++ CATEGORY PAGE ++++++++++ */
+/* ++++++++++ /CATEGORY PAGE ++++++++++ */
+
+
+
+/* ========== VBQPPL ========== */
+.documentList th {
+	text-align: center;
+}
+
+/* ========== /VBQPPL ========== */
+}
+/* ==================== ///TABLETS 768PX TRO LEN ==================== */
+
+
+
+
+
+
+
+/* ----------- iPad 3 and 4 ----------- */
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+}
+
+/* Portrait */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: portrait) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+.homeNews .media>a{
+	width: 50%;
+	margin-right: 20px;
+}
+.homeNews .media .media-heading {
+}
+
+
+}
+
+/* Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (orientation: landscape) 
+  and (-webkit-min-device-pixel-ratio: 2) {
+
+.moreFocusNews img {
+  height: 318px !important;
+}
+
+
+}
+
+
+
+
+
+
+
+/* ========== DESKTOPS 992PX TRO LEN ========== */
+@media (min-width: 992px) {
+/* ++++++++++ GENERAL ++++++++++ */
+.rightBorder {
+	border-right: 1px solid #eee;
+}
+/* --Top menu-- */
+.topMenu .navbar-nav>li {
+	border-right: 1px solid #E8E8E8;
+}
+.topMenu .navbar-nav>li>a {
+	font-weight: 700;
+	padding-left: 14px;
+	padding-right: 14px;
+}
+.topMenu .navbar-nav>li>a:hover {
+	background: #3c9cde;
+}
+.topMenu .navbar-nav>li:last-child {
+	border-right: none;
+}
+/* ++++++++++ /GENERAL ++++++++++ */
+
+
+
+
+/* ++++++++++ HOME PAGE ++++++++++ */
+.moreFocusNews img {
+  height: 200px !important;
+}
+.thumbnail:hover p.pxemtiep {
+  opacity: 1;
+  bottom: 0px;
+  -webkit-transition: all ease 400ms;
+  -moz-transition: all ease 400ms;
+  -ms-transition: all ease 400ms;
+  -o-transition: all ease 400ms;
+  z-index: 100;
+  cursor: pointer;
+}
+/* ++++++++++ /HOME PAGE ++++++++++ */
+
+
+}
+/* ==================== ///DESKTOPS 992PX TRO LEN ==================== */
+
+@media (min-width: 1200px) {
+
+}
+
+
+
